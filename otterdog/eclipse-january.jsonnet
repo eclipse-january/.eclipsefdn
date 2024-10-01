@@ -40,9 +40,6 @@ orgs.newOrg('eclipse-january') {
         orgs.newBranchProtectionRule('master') {
           is_admin_enforced: true,
           required_approving_review_count: null,
-          required_status_checks+: [
-            "any:eclipsefdn/eca"
-          ],
           requires_pull_request: false,
         },
         orgs.newBranchProtectionRule('january_*') {
@@ -56,41 +53,26 @@ orgs.newOrg('eclipse-january') {
         orgs.newBranchProtectionRule('january_1_0') {
           is_admin_enforced: true,
           required_approving_review_count: null,
-          required_status_checks+: [
-            "any:eclipsefdn/eca"
-          ],
           requires_pull_request: false,
         },
         orgs.newBranchProtectionRule('january_2_0') {
           is_admin_enforced: true,
           required_approving_review_count: null,
-          required_status_checks+: [
-            "any:eclipsefdn/eca"
-          ],
           requires_pull_request: false,
         },
         orgs.newBranchProtectionRule('january_2_1') {
           is_admin_enforced: true,
           required_approving_review_count: null,
-          required_status_checks+: [
-            "any:eclipsefdn/eca"
-          ],
           requires_pull_request: false,
         },
         orgs.newBranchProtectionRule('january_2_2') {
           is_admin_enforced: true,
           required_approving_review_count: null,
-          required_status_checks+: [
-            "any:eclipsefdn/eca"
-          ],
           requires_pull_request: false,
         },
         orgs.newBranchProtectionRule('january_2_3') {
           is_admin_enforced: true,
           required_approving_review_count: null,
-          required_status_checks+: [
-            "any:eclipsefdn/eca"
-          ],
           requires_pull_request: false,
         },
       ],
@@ -123,7 +105,6 @@ orgs.newOrg('eclipse-january') {
           required_approving_review_count: null,
           required_status_checks+: [
             "any:continuous-integration/travis-ci",
-            "any:eclipsefdn/eca"
           ],
           requires_pull_request: false,
         },
