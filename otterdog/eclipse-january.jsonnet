@@ -1,6 +1,6 @@
 local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
-orgs.newOrg('eclipse-january') {
+orgs.newOrg('science.january', 'eclipse-january') {
   settings+: {
     description: "",
     name: "Eclipse January",
