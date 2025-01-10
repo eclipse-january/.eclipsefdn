@@ -22,20 +22,6 @@ orgs.newOrg('science.january', 'eclipse-january') {
       dependabot_security_updates_enabled: true,
       description: "January project",
       web_commit_signoff_required: false,
-      webhooks: [
-        orgs.newRepoWebhook('https://notify.travis-ci.org') {
-          events+: [
-            "create",
-            "delete",
-            "issue_comment",
-            "member",
-            "public",
-            "pull_request",
-            "push",
-            "repository"
-          ],
-        },
-      ],
       branch_protection_rules: [
         orgs.newBranchProtectionRule('master') {
           is_admin_enforced: true,
